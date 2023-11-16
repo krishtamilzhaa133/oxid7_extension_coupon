@@ -2,6 +2,6 @@
 {% block account_menu %}
 {{ parent() }}
 <li class="list-group-item{% if active_link == "avaliablecoupons" %} active{% endif %}">
-  <a href="{{ seo_url({ ident: oViewConf.getSslSelfLink()|raw()|cat("cl=avaliablecoupons") }) }}" title="{{ translate({ ident: "COUPONSAVALIABLE" }) }}">{{ translate({ ident: "COUPONSAVALIABLE" }) }}</a>
+  <a href="{{ seo_url({ ident: oViewConf.getSslSelfLink()|raw()|cat("cl=account_avaliablecoupons") }) }}" title="{{ translate({ ident: "COUPONSAVALIABLE" }) }}">{{ translate({ ident: "COUPONSAVALIABLE" }) }}</a>
 </li>
 {% endblock %}
