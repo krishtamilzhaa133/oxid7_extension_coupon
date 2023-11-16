@@ -1,0 +1,13 @@
+{% extends 'page/account/dashboard.html.twig' %}
+{% block account_dashboard_col2 %}
+{{ parent() }}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a id="linkAccountPassword" href="{{ seo_url({ ident: oViewConf.getSslSelfLink()|raw()|cat("cl=account_avaliablecoupons") }) }}">{{ translate({ ident: "COUPONSAVALIABLE" }) }}</a>
+        <a href="{{ seo_url({ ident: oViewConf.getSslSelfLink()|raw()|cat("cl=account_avaliablecoupons") }) }}" class="btn btn-default btn-xs pull-right">
+            <i class="fa fa-arrow-right"></i>
+        </a>
+    </div>
+    <div class="panel-body">{{ translate({ ident: "COUPONSAVALIABLE" }) }}</div>
+</div>
+{% endblock %}
